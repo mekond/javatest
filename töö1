@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class Kujund
+{
+    static Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        System.out.print("Sisesta raadius: ");
+
+        double raadius = sc.nextDouble();
+        //RingiPindala = PI*raadius*raadius
+        double ringipindala = Math.PI * (raadius * raadius);
+        System.out.println("Ringi pindala on: " + ringipindala);
+        //RingiÜmbermõõt = 2*PI*raadius
+        double ringiymberm66t = Math.PI * 2*raadius;
+        System.out.println( "Ringi ümbermõõt on: " + ringiymberm66t) ;
+        //RuuduPindala = (2*raadius)*(2*raadius)
+        double ruudupindala = (raadius*2)*(raadius*2);
+        System.out.println("Ruudu pindala on: " + ruudupindala);
+        //RuuduÜmbermõõt = 2*(raadius*2)
+        double ruuduymberm66t = 2*(raadius*2+raadius*2);
+        System.out.println("Ruudu ümbermõõt on: " + ruuduymberm66t);
+    }
+}
