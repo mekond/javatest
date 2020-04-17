@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+class Palk {
+    public static void main(String[] args) {
+        Scanner raha = new Scanner(System.in);
+
+        System.out.println("Sisesta palga massiiv: ");
+
+        int SuurRaha = raha.nextInt();
+
+        if (SuurRaha <= 1000) {
+            int t6us = (SuurRaha * 105) / 100;
+            System.out.println("Uus palk: " + t6us);
+        } else if (SuurRaha > 1001) {
+            System.out.println("Ei saa palgatõusu!");
+        }
+    }
+}
